@@ -5,6 +5,7 @@ import Characters from "./Characters.jsx";
 import Create from "./Create.jsx";
 import Edit from "./Edit.jsx";
 import CharacterDetail from "./CharacterDetail.jsx";
+import Delete from "./Delete.jsx";
 
 const router = createBrowserRouter([
     {
@@ -27,7 +28,10 @@ const router = createBrowserRouter([
                 path: "edit/:id",
                 element: <Edit />,
             },
-
+            {
+                path: "/delete/:id",
+                element: <Delete />,
+            },
         ],
     },
 ]);
